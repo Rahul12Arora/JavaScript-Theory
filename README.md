@@ -702,12 +702,17 @@ firstPromiseReturner().then((resolveValue)=>{
 
 
 **Running multiple promises at once => Promise.all (messages contains responses of all promises)**
-```Promise.all([ promise1, promise2, promise3 ]).then((messages)=>{    .all takes array of promises as an argument,
-console.log(messages)})                                              .then has a callback function that takes messages array as an argumrnt which has promise responses```
+```
+Promise.all([ promise1, promise2, promise3 ]).then((messages)=>{    .all takes array of promises as an argument,
+console.log(messages)})                                              .then has a callback function that takes messages array as an argumrnt which has promise responses
+```
 
 **Running multiple promises at once => Promise.race (message is first promise that runs)**
-```Promise.all([ promise1, promise2, promise3 ]).then((messages)=>{   .all takes array of promises as an argument,
-console.log(messages)})                                             .then has a callback function that takes message as an argumrnt of the first promise to respond```
+```
+Promise.all([ promise1, promise2, promise3 ]).then((messages)=>{   .all takes array of promises as an argument,
+console.log(messages)})                                             .then has a callback function that takes message as an argumrnt of the first promise to respond
+```
+
 
 ```
 async function doWork(){
@@ -721,5 +726,4 @@ catch(err){
     console.log(err)}
 }
 doWork()
-
 ```
