@@ -752,3 +752,5 @@ makeRequest('Facebook').then(response=>{
     console.log(processedResponse)}).
     catch(err => {console.log(err)})
 ```
+
+Event listner functions recieve an object called event by default, which we can use according to out need
