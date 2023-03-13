@@ -754,3 +754,22 @@ makeRequest('Facebook').then(response=>{
 ```
 
 Event listner functions recieve an object called event by default, which we can use according to out need
+
+Classes in javascript
+```
+class Car {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  getAge() {
+    return new Date().getFullYear() - this.year;
+  }
+}
+
+let myCar = new Car('Toyota', 'Camry', 2018);
+
+```
+
